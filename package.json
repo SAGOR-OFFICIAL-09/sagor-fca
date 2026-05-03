@@ -1,6 +1,6 @@
 {
   "name": "sagor-fca",
-  "version": "0.0.18",
+  "version": "0.0.20",
   "description": "Custom FCA build by SaGor (forked from fca-unofficial) with extended features and faster updates.",
   "main": "index.js",
   "files": [
