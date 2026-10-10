@@ -1,0 +1,89 @@
+{
+  "name": "sagor-fca",
+  "version": "2.1.0",
+  "description": "SAGOR FCA — Facebook Chat API for Node.js with real Messenger E2EE support (Signal + Noise). Interact with Facebook Messenger programmatically.",
+  "main": "dist/cjs.cjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/cjs.cjs",
+      "import": "./dist/index.mjs",
+      "default": "./dist/index.mjs"
+    },
+    "./e2ee": "./e2ee/index.js",
+    "./e2ee-bridge": "./e2ee-bridge.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist/",
+    "README.md",
+    "test/",
+    "LICENSE",
+    "fca-config.example.json",
+    "e2ee/",
+    "e2ee-bridge.js"
+  ],
+  "scripts": {
+    "test": "node ./test/fca.test.cjs && node ./test/e2ee-bridge.mock.test.cjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SAGOR-OFFICIAL-09/sagor-fca-v2.git"
+  },
+  "keywords": [
+    "facebook",
+    "chat",
+    "api",
+    "messenger",
+    "bot",
+    "unofficial",
+    "automation",
+    "facebook-api",
+    "facebook-chat",
+    "facebook-messenger",
+    "chatbot",
+    "nodejs",
+    "fca"
+  ],
+  "author": {
+    "name": "SAGOR",
+    "url": "https://github.com/SAGOR-OFFICIAL-09"
+  },
+  "contributors": [
+    {
+      "name": "SAGOR",
+      "url": "https://github.com/SAGOR-OFFICIAL-09"
+    }
+  ],
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/SAGOR-OFFICIAL-09/sagor-fca-v2/issues"
+  },
+  "homepage": "https://github.com/SAGOR-OFFICIAL-09/sagor-fca-v2#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@signalapp/libsignal-client": "0.70.0",
+    "axios": "^1.13.5",
+    "axios-cookiejar-support": "^5.0.5",
+    "duplexify": "^4.1.3",
+    "https-proxy-agent": "^4.0.0",
+    "mqtt": "^4.3.8",
+    "picocolors": "^1.1.1",
+    "protobufjs": "^8.0.1",
+    "sequelize": "^6.37.6",
+    "sqlite3": "^5.1.7",
+    "ws": "^8.18.1"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "optionalDependencies": {
+    "ora": "^9.3.0",
+    "gradient-string": "^3.0.0",
+    "cli-progress": "^3.12.0"
+  }
+}
