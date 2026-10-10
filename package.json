@@ -1,7 +1,7 @@
 {
   "name": "sagor-fca",
   "version": "2.1.0",
-  "description": "SAGOR FCA — Facebook Chat API for Node.js with real Messenger E2EE support (Signal + Noise). Interact with Facebook Messenger programmatically.",
+  "description": "SAGOR Fca — Facebook Chat API for Node.js with real Messenger E2EE support (Signal + Noise). Interact with Facebook Messenger programmatically.",
   "main": "dist/cjs.cjs",
   "types": "dist/index.d.ts",
   "exports": {
